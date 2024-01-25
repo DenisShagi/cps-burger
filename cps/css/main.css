@@ -96,8 +96,91 @@ html {
 
 body {
   font-family: "TT Lakes";
+  width: 768px;
 }
 
 .wrapper {
   margin: 20px 16px 0;
+}
+
+.burger {
+  position: relative;
+  top: 0;
+  left: 0;
+  max-width: 320px;
+  padding: 20px 24px 32px;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+}
+.burger-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.burger-logo__elem2 {
+  padding-right: 50px;
+}
+.burger-nav {
+  margin-bottom: 268px;
+}
+.burger-list li:not(:last-child) {
+  padding-bottom: 32px;
+}
+.burger-list__left-element {
+  position: absolute;
+  left: 0;
+}
+.burger-list__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1B1C21;
+}
+.burger-list__link--active {
+  color: #7E7E82;
+}
+.burger-list__link:focus {
+  color: #7E7E82;
+}
+.burger-list__link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+  text-decoration-color: #7E7E82;
+}
+
+.footer-logo {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.footer-link {
+  display: flex;
+  flex-direction: column;
+}
+.footer-link :not(:last-child) {
+  margin-bottom: 12px;
+}
+.footer-link__mail {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1B1C21;
+}
+.footer-link__phone {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #1B1C21;
+}
+
+.button__lang {
+  margin-top: 40px;
+  margin-right: 7px;
+}
+.button__lang--active {
+  color: #7E7E82;
 }/*# sourceMappingURL=main.css.map */

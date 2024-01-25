@@ -1,0 +1,83 @@
+.burger {
+  position: relative;
+  top: 0;
+  left: 0;
+  max-width: $mobile-width;
+  padding: 20px 24px 32px;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+
+  &-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+
+    &__elem2 {
+      padding-right: 50px;
+    }
+  }
+
+  &-nav {
+    margin-bottom: 268px;
+  }
+
+  &-list {
+    & li:not(:last-child) {
+      padding-bottom: 32px;
+    }
+
+    &__left-element {
+      position: absolute;
+      left: 0;
+    }
+    &__link {
+      @include font($weight: 500, $size: 16px, $height: 24px);
+      color: $color-text;
+      &--active {
+        color: $color-link;
+      }
+      &:focus{
+        color: $color-link;
+      }
+      &:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+        text-underline-offset: 4px;
+        text-decoration-color: $color-link;  
+      }
+    }
+  }
+}
+
+.footer {
+  &-logo {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  &-link { 
+    display: flex;
+    flex-direction: column;
+    & :not(:last-child){
+      margin-bottom: 12px;
+    }
+
+    &__mail {
+      @include font($weight: 500, $size: 16px, $height: 24px);
+      color: $color-text;
+    }
+    &__phone {
+      @include font($weight: 700, $size: 24px, $height: 32px);
+      color: $color-text;
+    }
+  }
+}
+
+.button__lang {
+  margin-top: 40px;
+  margin-right: 7px;
+  &--active {
+    color: $color-link;
+  }
+}
