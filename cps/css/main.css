@@ -1,0 +1,186 @@
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+@font-face {
+  font-family: "TTLakes";
+  src: local("TTLakes"), url("/fonts/TTLakes-Black.woff") format("woff"), url("/fonts/TTLakes-Regular.woff") format("woff"), url("/fonts/TTLakes-ThinItalic.woff") format("woff"), url("/fonts/TTLakes-Thin.woff") format("woff");
+}
+html {
+  scroll-behavior: smooth;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "TT Lakes";
+  width: 768px;
+}
+
+.wrapper {
+  margin: 20px 16px 0;
+}
+
+.burger {
+  position: relative;
+  top: 0;
+  left: 0;
+  max-width: 320px;
+  padding: 20px 24px 32px;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+}
+.burger-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.burger-logo__elem2 {
+  padding-right: 50px;
+}
+.burger-nav {
+  margin-bottom: 268px;
+}
+.burger-list li:not(:last-child) {
+  padding-bottom: 32px;
+}
+.burger-list__left-element {
+  position: absolute;
+  left: 0;
+}
+.burger-list__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1B1C21;
+}
+.burger-list__link--active {
+  color: #7E7E82;
+}
+.burger-list__link:focus {
+  color: #7E7E82;
+}
+.burger-list__link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+  text-decoration-color: #7E7E82;
+}
+
+.footer-logo {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.footer-link {
+  display: flex;
+  flex-direction: column;
+}
+.footer-link :not(:last-child) {
+  margin-bottom: 12px;
+}
+.footer-link__mail {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1B1C21;
+}
+.footer-link__phone {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #1B1C21;
+}
+
+.button__lang {
+  margin-top: 40px;
+  margin-right: 7px;
+}
+.button__lang--active {
+  color: #7E7E82;
+}/*# sourceMappingURL=main.css.map */
