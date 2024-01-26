@@ -72,12 +72,15 @@
       color: $color-text;
     }
   }
+
+  &-form {
+    display: flex;
+    gap: 20px;
+  }
 }
 
-.button__lang {
-  margin-top: 40px;
-  margin-right: 7px;
-  &--active {
-    color: $color-link;
-  }
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 }

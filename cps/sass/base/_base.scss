@@ -19,3 +19,16 @@ body {
 .wrapper {
   margin: 20px 16px 0;
 }
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  &__color {
+    background-color: $btn-color;
+  }
+}
